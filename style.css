@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
 :root {
 	--pokemon-yellow: #ffcb06;
 	--pokemon-blue: #3366af;
@@ -9,47 +9,100 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-html {
-    font-family: "Luckiest Guy", cursive;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
     background-color: var(--pokemon-yellow);
 }
 
-.flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.wrapper-container {
-	height: 100vh;
-}
-
 .pokemon-banner {
+    
 	height: 10vh;
+    display: block;
+    position: relative;
+    margin: 5px auto;
 }
 
-.random-pokemon {
-	height: 300px;
-	width: 300px;
-	border: 1rem solid var(--pokemon-blue);
-	border-radius: 1rem;
-	margin: 3rem 0;
+.container {
+	width: 350px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
 }
 
-.random-pokemon > h2 {
-	font-size: 2rem;
+#card {
+    position: relative;
+    background: radial-gradient(circle at 50% 0%, purple 36%, #fff 36%);
+    width: 100%;
+    padding: 30px 20px;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.15);
+    border-radius: 10px;
 }
 
-.random-pokemon > img {
-	height: 60%;
+#card img {
+    display: block;
+    width: 180px;
+    height: 200px;
+    position: relative;
+    margin: 20px auto;
 }
-.pokeball {
-	height: 7vh;
-	cursor: pointer;
+
+.hp {
+    width: 80px;
+    background-color: #fff;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 30px;
+    margin-left: auto;
+    font-weight: 400;
 }
+
+
+.name {
+    text-align: center;
+    font-weight: 600;
+}
+
+.types {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0 40px 0;
+}
+
+.hp span,
+.types span {
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    font-weight: 600;
+}
+
+.types span {
+    padding: 5px 20px;
+}
+
+.stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.stats p {
+    color: #404060;
+}
+
+#btn {
+    display: block;
+    padding: 15px 60px;
+    font-size: 18px;
+    background-color: #101010;
+    color: #fff;
+    position: relative;
+    margin: 30px auto;
+    border: none;
+    border-radius: 5px;
+}
+
+
